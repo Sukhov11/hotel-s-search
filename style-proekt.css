@@ -1,0 +1,160 @@
+/* Начало блока со стилями для Body*/ 
+.body {
+    font-family:  sans-serif;
+    font-size: 18px;
+    width: 1440px;
+  margin-left: 30px;
+}
+       /* Конец блока со стилями для Body*/ 
+
+       /* Начало блока со стилями для текста*/ 
+    h1 {
+        color: brown;
+    }
+
+    h2 {
+    display: flex;
+    justify-content: center;
+    }
+    /* Конец блока со стилями для текста*/ 
+
+       /* Начало блока со стилями для верхнее меню*/ 
+.bar1 {
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 20% 15% 15%;
+    gap: 1rem;
+   align-items: baseline;
+    background-color: rgba(230, 233, 227, 0.548);
+    margin-bottom: 30px;
+}
+/* Конец блока со стилями для верхнее меню*/ 
+
+/* Начало блока со стилями для бронирование*/ 
+.bar2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+.span_one {
+    font-size: 25px;
+    color: brown;
+}
+
+.data {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+  max-width: 150px;
+  margin: auto;
+ border-color: black;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+/* Конец блока со стилями для бронирование*/ 
+
+/* Начало блока со стилями для иконки*/ 
+.icons {
+margin-top: 50px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+a {
+    font-family:  'Arial Narrow', Arial, sans-serif;
+    color: black;
+    text-decoration: none;
+}
+/* Конец блока со стилями для иконки*/ 
+
+/* Начало блока со стилями для фото раздела*/ 
+img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.all {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+justify-items: center;
+
+}
+
+.grey {
+color: rgb(54, 53, 53);
+}
+
+.photo {
+    border-style: solid;
+    border: thin;
+    background-color: rgba(230, 233, 227, 0.548);
+    border-radius: 10px;
+}
+
+.inner {
+    width: 100px;
+margin: auto;
+}
+/* Конец блока со стилями для фото раздела*/ 
+
+/* Начало блока со стилями для подвала*/
+.podval {
+    border-top: 2px solid;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size:medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* Конец блока со стилями для подвала*/
+
+/* IPhone XR*/
+@media screen and (max-width: 415px)
+{
+.bar1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.bar2 {
+    display: grid;
+    grid-template-columns: 40% 40% ;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.all {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+.podval {
+display: grid;
+grid-template-columns: 40% 20% 10%;
+
+}
+}
+/* IPad Air*/
+@media screen and (min-width: 700px) and (max-width: 900px) 
+{
+    .bar1{
+       align-items: center;
+    }
+.bar2
+    {  display: grid;
+        grid-template-columns: 30% 30% 20% 20%;
+        
+     
+        
+    }
+.all {
+       display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    
+}
